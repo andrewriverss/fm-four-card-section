@@ -139,7 +139,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3.625rem;
+  gap: clamp(3.625rem, 3.267rem + 1.5909vw, 4.5rem);
 }
 .features__header {
   color: var(--grey-500);
@@ -150,10 +150,8 @@ body {
 }
 @media (min-width: 768px) {
   .features__header {
-    margin-top: -4.5rem;
     max-width: 34.375rem;
     gap: 1.25rem;
-    margin-bottom: 0.875rem;
   }
 }
 .features__text-wrapper {
